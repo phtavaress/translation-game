@@ -1,5 +1,8 @@
 .jumbotron {
     margin-top: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 30px 30px;
+}
+
+.row {
+    margin: 20px;
 }
