@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopoComponent implements OnInit {
 
+  titulo: string = 'Aprendendo inglês';
+
   constructor() { }
 
   ngOnInit(): void {
