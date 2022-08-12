@@ -32,9 +32,11 @@ export class PainelComponent implements OnInit {
 
   verificarResposta(): void {
     if(this.rodadaFrase.frasePtBr == this.resposta) {
-      alert('A tradução está correta!');
       this.rodada++;
       this.progresso = this.progresso + (100 / this.frases.length);
+      if(this.rodada == 4) {
+        alert('Traduções concluídas com sucesso!');
+      }
       this.atualizaRodada();
     } else {
       //alert('A tradução está errada.');
