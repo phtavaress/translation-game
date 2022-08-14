@@ -20,14 +20,12 @@ export class PainelComponent implements OnInit, OnDestroy {
 
   constructor() {
     this.rodadaFrase = this.frases[this.rodada];
-    console.log(this.rodadaFrase);
   }
 
   ngOnInit(): void {
   }
 
   ngOnDestroy(): void {
-      console.log('Componente Painel destruído');
   }
 
   atualizaResposta(resposta: Event): void {
