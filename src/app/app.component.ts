@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'translation-game';
+
+  jogoEmAndamento: boolean = true;
+
+  encerrarJogo(tipo: string): void {
+    console.log(tipo);
+    this.jogoEmAndamento = false;
+  }
 }
